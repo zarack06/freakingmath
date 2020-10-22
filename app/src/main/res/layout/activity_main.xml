@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="19"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18"
+        android:weightSum="18"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="15">
+            <TextView
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="@android:dimen/app_icon_size"
+            android:id="@+id/text1"
+            android:textSize="20sp"
+            tools:text="Bấm RESET Để Chơi lại"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+            <TextView
+
+                android:paddingHorizontal="@android:dimen/app_icon_size"
+                android:id="@+id/textPoint"
+                android:textSize="35sp"
+                tools:text="Điểm:__ "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+
+                android:paddingHorizontal="@android:dimen/app_icon_size"
+                android:id="@+id/textTime"
+                android:textSize="35sp"
+                tools:text="Time :__S"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+               android:layout_marginTop="60dp"
+                android:paddingHorizontal="@android:dimen/app_icon_size"
+                android:id="@+id/textMain"
+                android:textSize="48sp"
+                tools:text="Bấm RESET Để Bắt Đầu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:paddingHorizontal="@android:dimen/app_icon_size"
+                android:id="@+id/textResultMath"
+                android:layout_gravity="top"
+                android:textSize="58sp"
+                tools:text="            "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:text="Reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="bottom"
+            android:layout_gravity="bottom"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/buttonTrue"
+                android:layout_gravity="left"
+                android:textSize="20sp"
+                android:text="True"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/buttonFalse"
+                android:layout_gravity="right"
+                android:textSize="20sp"
+                android:text="False"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+
+
+
+</LinearLayout>
